@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+
+@theme {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1330px;
+
+  --color-primary: #242a2b;
+  --color-secondary: #808080;
+  --color-grey: #e8f0f1;
+  --color-accent-default: #1cbccf;
+  --color-accent-secondary: #18abbc;
+  --color-accent-tertiary: #90c6cd;
+
+  --shadow-custom1: 0px 2px 40px 0px rgba(8, 70, 78, 0.08);
+  --shadow-custom2: 0px 0px 30px 0px rgba(8, 73, 81, 0.06);
+}
+
+@layer base {
+  .container {
+    padding: 15px;
+  }
+  .services {
+    background-image: url(../projectassets/img/services/bg.svg);
+  }
+  .testimonials {
+    background-image: url(../projectassets/img/testimonials/bg.svg);
+  }
+  .quote-left {
+    background-image: url(../projectassets/icons/testimonials/quote-left.svg);
+  }
+  .quote-right {
+    background-image: url(../projectassets/icons/testimonials/quote-right.svg);
+  }
+}
