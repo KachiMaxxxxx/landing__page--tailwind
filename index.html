@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/input.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
     <title>Landing Page Project</title>
     
 </head>
 <body>
-  <header class= "py-8 lg:pt-6 lg:pb-14 bg-pink-200">
+  <header class= "py-8 lg:pt-6 lg:pb-14 ">
     <div class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 ">
       <!-- logo  -->
       <div class="flex justify-center lg:justify-normal">
@@ -16,9 +20,23 @@
           <img src="./projectassets/img/header/logo.svg" alt="" srcset="">
         </a>
       </div>
+      <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0">
+        <div class="flex justify-center items-center gap-x-2 lg:justify-normal ">
+          <i class="ri-map-pin-user-fill text-2xl text-accent"></i>
+          <div class="text-secondary">19 Umunanga, Maryland Enugu</div>
+        </div>
+        <div class="flex justify-center items-center gap-x-2 lg:justify-normal" >
+          <i class="ri-phone-fill text-2xl text-accent"></i>
+          <div class="text-secondary">(+234) 907 455 3935</div>
+        </div>
+        <div>
+          <button class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0">Book Now</button>
+        </div>
+      </div>
     </div>
   </header>
-  
-<script type="module" src="src/main.js"></script>
+  <script type="module" src="src/swiper.js"></script>
+  <script type="module" src="src/scrollreveal.js"></script>
+  <script type="module" src="src/main.js"></script>
 </body>
 </html>
