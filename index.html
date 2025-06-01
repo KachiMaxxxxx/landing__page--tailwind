@@ -11,7 +11,7 @@
     <title>Landing Page Project</title>
     
 </head>
-<body>
+  <body>
   <header class= "py-8 lg:pt-6 lg:pb-14 ">
     <div class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4 ">
       <!-- logo  -->
@@ -20,20 +20,32 @@
           <img src="./projectassets/img/header/logo.svg" alt="" srcset="">
         </a>
       </div>
+      
       <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0">
+        <!-- location  -->
         <div class="flex justify-center items-center gap-x-2 lg:justify-normal ">
           <i class="ri-map-pin-user-fill text-2xl text-accent"></i>
           <div class="text-secondary">19 Umunanga, Maryland Enugu</div>
         </div>
+        <!-- contact -->
         <div class="flex justify-center items-center gap-x-2 lg:justify-normal" >
           <i class="ri-phone-fill text-2xl text-accent"></i>
           <div class="text-secondary">(+234) 907 455 3935</div>
         </div>
+        <!-- button -->
         <div>
           <button class="btn btn-sm btn-outline w-[240px] lg:w-auto mx-auto lg:mx-0">Book Now</button>
         </div>
+        <!-- nav -->
+        <nav class="mnav bg-pink-200 fixed w-[300px] top-0 h-screen -left-[300px] shadow-2xl lg:hidden transition-all duration-300 z-20">
+          <!-- nav trigger btn -->
+          <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full top-8 flex justify-center items-center rounded-tr-lg rounded-br-lg cursor-default transition-all">
+            <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
+          </div>
+        </nav>
       </div>
     </div>
+    
   </header>
   <script type="module" src="src/swiper.js"></script>
   <script type="module" src="src/scrollreveal.js"></script>

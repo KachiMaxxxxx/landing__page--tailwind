@@ -2,41 +2,43 @@
 
 
 @theme {
-  --breakpoint-sm: 640px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 960px;
-  --breakpoint-xl: 1330px;
+    --breakpoint-*: initial;
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 960px;
+    --breakpoint-xl: 1330px;
 
-  --font-primary: "Poppins";
+    --font-primary: "Poppins";
 
-  --color-primary: #242a2b;
-  --color-secondary: #808080;
-  --color-grey: #e8f0f1;
-  --color-accent: #1cbccf;
-  --color-accent-secondary: #18abbc;
-  --color-accent-tertiary: #90c6cd;
+    --color-primary: #242a2b;
+    --color-secondary: #808080;
+    --color-grey: #e8f0f1;
+    --color-accent: #1cbccf;
+    --color-accent-secondary: #18abbc;
+    --color-accent-tertiary: #90c6cd;
 
   --shadow-custom1: 0px 2px 40px 0px rgba(8, 70, 78, 0.08);
   --shadow-custom2: 0px 0px 30px 0px rgba(8, 73, 81, 0.06);
 }
 
-@layer base {
-  .container {
-    padding: 15px;
+
+  @utility container {
+    padding-inline: 0.9375rem;
   }
-  .bg-services {
+  @utility services {
     background-image: url(../projectassets/img/services/bg.svg);
   }
-  .bg-testimonials {
+  @utility testimonials {
     background-image: url(../projectassets/img/testimonials/bg.svg);
   }
-  .bg-quoteLeft {
+  @utility quoteLeft {
     background-image: url(../projectassets/icons/testimonials/quote-left.svg);
   }
-  .bg-quoteRight {
+  
+  @utility quoteRight {
     background-image: url(../projectassets/icons/testimonials/quote-right.svg);
   }
-}
+
 
 
  body{
