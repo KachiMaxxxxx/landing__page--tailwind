@@ -16,7 +16,7 @@
     />
     <title>Landing Page Project</title>
   </head>
-  <body >
+  <body>
     <header class="py-8 lg:pt-6 lg:pb-14">
       <div
         class="container mx-auto lg:relative flex flex-col lg:flex-row lg:justify-between gap-y-4"
@@ -205,35 +205,105 @@
         </div>
       </div>
     </header>
-    <section class="hero bg-grey py-12  xl:pt-12 xl:pb-0 overflow-hidden">
-      <div class="container mx-auto h-full">
+    <section class="hero bg-grey py-12 xl:pt-12 xl:pb-0 overflow-hidden">
+      <div class="container mx-auto">
         <!-- text and image -->
         <div
           class="flex flex-col xl:flex-row items-center justify-between h-full"
         >
           <!-- text -->
-          <div class="hero__text xl:w-[48%] text-center xl:text-left"></div>
-          <!-- badge -->
-          <div class="flex items-center bg-white py-[10px] px-[20px] w-max gap-x-2 mb-[26px] rounded-full mx-auto xl:mx-0">
-            <!-- badge icon -->
-             <i class="ri-heart-pulse-line text-2xl text-accent"></i>
-             <div class="uppercase text-base font-medium text- tracking-" #9ab4b7="" 2.24px="">
-              Live your life        
-             </div>
+          <div class="hero__text xl:w-[48%] text-center xl:text-left">
+            <!-- badge -->
+            <div
+              class="flex items-center bg-white py-[10px] px-[20px] w-max gap-x-2 mb-[26px] rounded-full mx-auto xl:mx-0"
+            >
+              <!-- badge icon -->
+              <i class="ri-heart-pulse-line text-2xl text-accent"></i>
+              <div
+                class="uppercase text-base font-medium text-[#9ab4b7] tracking-[2.24px]"
+              >
+                Live your life
+              </div>
+            </div>
+
+            <!-- title -->
+            <h1 class="h1 mb-6">We care about your health</h1>
+            <!-- desc -->
+            <p class="mb-[42px] md:max-w-xl">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
+              molestiae fuga, repellendus neque ratione consequuntur repellat
+              at, laborum nisi dolorem magnam dolores labore saepe.
+            </p>
+            <!-- btn -->
+            <button class="btn btn-lg btn-accent mx-auto xl:mx-0">
+              Contact Us
+            </button>
           </div>
-          <!-- title -->
-          <h1 class=" h1  mb-6">We care about your health</h1>
-          <!-- desc -->
-          <p class="mb-[42px] ">description</p>
-          <!-- btn -->
-          <button>Contact Us</button>
+
           <!-- image -->
-           <div class="hero__img hidden xl:flex max-w- self-end" 814px="">
-           <img src="projectassets/img/hero/img.png" alt="">
+          <div class="hero__img hidden xl:flex max-w-[814px] self-end">
+            <img src="projectassets/img/hero/img.png" alt="" />
           </div>
         </div>
       </div>
     </section>
+    <!-- end hero -->
+
+    <!-- stats -->
+    <section class="stats section">
+      <div class="container mx-auto">
+        <!-- wrapper -->
+        <div class="flex flex-col xl:flex-row gap-y-6 justify-between ">
+          <!-- item -->
+          <div
+            class="stats__item flex-1 xl:border-r flex flex-col items-center"
+          >
+            <div
+              class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2"
+            >
+              +5120
+            </div>
+            <div>Happy patients</div>
+          </div>
+          <div
+            class="stats__item flex-1 xl:border-r flex flex-col items-center"
+          >
+            <div
+              class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2"
+            >
+              +26
+            </div>
+            <div>Total Branches</div>
+          </div>
+          <div
+            class="stats__item flex-1 border-r flex flex-col items-center"
+          >
+            <div
+              class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2"
+            >
+              +53
+            </div>
+            <div>Senior Doctors</div>
+          </div>
+          <div
+            class="stats__item flex-1 flex flex-col items-center"
+          >
+            <div
+              class="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2"
+            >
+              +10
+            </div>
+            <div>Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end stats -->
+
+
+     <!--services  -->
+     
+
     <script type="module" src="src/swiper.js"></script>
     <script type="module" src="src/scrollreveal.js"></script>
     <script type="module" src="src/main.js"></script>
