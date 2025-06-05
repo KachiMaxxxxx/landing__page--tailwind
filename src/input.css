@@ -25,17 +25,17 @@
   @utility container {
     padding-inline: 0.9375rem;
   }
-  @utility services {
+  @utility bg-services {
     background-image: url(../projectassets/img/services/bg.svg);
   }
-  @utility testimonials {
+  @utility bg-testimonials {
     background-image: url(../projectassets/img/testimonials/bg.svg);
   }
-  @utility quoteLeft {
+  @utility bg-quoteLeft {
     background-image: url(../projectassets/icons/testimonials/quote-left.svg);
   }
   
-  @utility quoteRight {
+  @utility bg-quoteRight {
     background-image: url(../projectassets/icons/testimonials/quote-right.svg);
   }
 
