@@ -424,14 +424,13 @@
             <!--  select 1 -->
             <div class="select border relative flex items-center">
               <!-- icon -->
-              <div class="absolute flex items-center inset-y-0 right-4">
+              <div class="absolute flex items-center inset-y-0 right-4 pointer-events-none">
                 <i class="ri-arrow-down-s-line text-[26px] text-primary"></i>
               </div>
               <!-- select -->
               <select
                 name=""
-                id=""
-                class="appearance-none outline-none h-full w-full bg-transparent px-4"
+                class=" select-input appearance-none outline-none h-full w-full bg-transparent px-4 z-10 relative cursor-default"
               >
                 <option value="1" selected>Select Department</option>
                 <option value="2">Internal Medicine</option>
@@ -443,13 +442,12 @@
             <div class="select border relative flex items-center">
               <!-- icon -->
               <div class="absolute flex items-center inset-y-0 right-4">
-                <i class="ri-arrow-down-s-line text-[26px] text-primary"></i>
+                <i class="ri-arrow-down-s-line text-[26px] text-primary pointer-events-none"></i>
               </div>
               <!-- select -->
               <select
                 name=""
-                id=""
-                class="appearance-none outline-none h-full w-full bg-transparent px-4"
+                class=" select__input appearance-none outline-none h-full w-full bg-transparent px-4 relative z-10"
               >
                 <option value="1" selected>Select Doctor</option>
                 <option value="2">Dr.Orizzmusssss</option>
@@ -458,7 +456,7 @@
               </select>
             </div>
           </div>
-          <!-- input wrapper -->
+          <!-- input wrapper 1-->
           <div class="flex flex-col xl:flex-row gap-5">
             <input type="text" class="input border" placeholder="Full Name" />
             <input
@@ -467,7 +465,7 @@
               placeholder="Phone Number"
             />
           </div>
-          <!-- input wrapper -->
+          <!-- input wrapper 2-->
           <div class="flex flex-col xl:flex-row gap-5">
             <input type="date" class="input border" />
             <input type="time" class="input border" />
@@ -478,7 +476,36 @@
         </form>
       </div>
     </section>
-
+    <!-- end appointment -->
+    <!-- start testimonials -->
+    <section
+      class="testimonials bg-testimonials bg-cover bg-right bg-no-repeat py-12 xl:min-h-[595px] xl:py-0"
+    >
+      <div class="testimonials__container container mx-auto">
+        <div>
+          <!-- img -->
+          <div class="hidden xl:flex">
+            <img src="projectassets/img/testimonials/img.png" alt="" />
+          </div>
+          <!-- slider -->
+          <div class="swiper">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script type="module" src="src/swiper.js"></script>
     <script type="module" src="src/scrollreveal.js"></script>
     <script type="module" src="src/main.js"></script>
