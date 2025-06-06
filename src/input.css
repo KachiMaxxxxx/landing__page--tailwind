@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
 
 
 @theme {
@@ -17,27 +18,16 @@
     --color-accent-secondary: #18abbc;
     --color-accent-tertiary: #90c6cd;
 
+    
+  
+
+
   --shadow-custom1: 0px 2px 40px 0px rgba(8, 70, 78, 0.08);
   --shadow-custom2: 0px 0px 30px 0px rgba(8, 73, 81, 0.06);
 }
 
 
-  @utility container {
-    padding-inline: 0.9375rem;
-  }
-  @utility bg-services {
-    background-image: url(../projectassets/img/services/bg.svg);
-  }
-  @utility bg-testimonials {
-    background-image: url(../projectassets/img/testimonials/bg.svg);
-  }
-  @utility bg-quoteLeft {
-    background-image: url(../projectassets/icons/testimonials/quote-left.svg);
-  }
   
-  @utility bg-quoteRight {
-    background-image: url(../projectassets/icons/testimonials/quote-right.svg);
-  }
 
 
 
@@ -86,11 +76,10 @@ h1,h2,h3,h4,h5,h6{
 .section {
     @apply py-12 xl:py-[150px];
 }
-/* swiper bullets */
- .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullets, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    @apply bg-accent;
-}
+
 /* FAQS */
 .faq__item.open .faq__answer {
     @apply h-full;
+
+    
 } 
