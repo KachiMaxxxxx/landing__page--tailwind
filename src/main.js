@@ -3,15 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileNav = document.querySelector(".mnav");
   const closeBtn = document.querySelector(".mnav__close-btn");
   const closedBtnIcn = document.querySelector(".mnav__close-btn-icon");
-  const selectIcons = document.querySelectorAll(".ri-arrow-down-s-line");
-  const selectInputs = document.querySelectorAll(".select__input");
+  
 
   const navOpenedClass = "left-0";
   const navClosedClass = "-left-[300px]";
   const arrowLeftClass = "ri-close-line";
   const arrowRightClass = "ri-menu-2-line";
-  const arrowDownClass = "ri-arrow-down-s-line";
-  const arrowUpClass = "ri-arrow-up-s-line";
+  
 
   closeBtn.addEventListener("click", () => {
     const navIsClosed = mobileNav.classList.contains(navClosedClass);
@@ -43,22 +41,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  selectInputs.forEach((selectInput) => {
-    selectInput.addEventListener("focus", () => {
-      const selectIconIsOpen = selectIcon.classList.contains(arrowDownClass);
-      if (selectIconIsOpen) {
-        selectIcon.classList.remove(arrowDownClass);
-        selectIcon.classList.add(arrowUpClass);
-      }
-    });
-  });
-  selectInputs.forEach((selectInput) => {
-    selectInput.addEventListener("blur", () => {
-      const selectIconIsClosed = selectIcon.classList.contains(arrowUpClass);
-      if (selectIconIsClosed) {
-        selectIcon.classList.remove(arrowUpClass);
-        selectIcon.classList.add(arrowDownClass);
-      }
-    });
-  });
+ 
 });
