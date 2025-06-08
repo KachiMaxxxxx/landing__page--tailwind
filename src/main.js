@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileNav = document.querySelector(".mnav");
   const closeBtn = document.querySelector(".mnav__close-btn");
   const closedBtnIcn = document.querySelector(".mnav__close-btn-icon");
-  
+  const faqItems = document.querySelectorAll(".faq__item")
 
   const navOpenedClass = "left-0";
   const navClosedClass = "-left-[300px]";
@@ -41,5 +41,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
- 
+ faqItems.forEach((item) =>{
+  const faqBtn = item.querySelector(".faq__btn");
+    item.addEventListener("click", () => {
+const isOpen = item.classList.toggle("open");
+  const iconClass = isOpen ? "ri-subtract-fill" : "ri-add-fill";
+  const iconElement = faqBtn.querySelector("i");
+  iconElement.className = `${iconClass} text-2xl`
+;})
+  
+  
+
+ })
 });
