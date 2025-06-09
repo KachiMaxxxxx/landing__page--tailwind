@@ -56,7 +56,7 @@ h1,h2,h3,h4,h5,h6{
     @apply h-14 px-10;
 }
 .btn-lg {
-    @apply h-14 px-[50px];
+    @apply h-16 px-[50px];
 }
 .btn-accent {
     @apply bg-accent text-white hover:bg-accent-secondary;
